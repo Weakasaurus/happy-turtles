@@ -46,7 +46,7 @@ body {
 }
 
 a {
-  color: var(--green-dark);
+  color: var(--green-light);
   font-weight: 700;
 }
 
@@ -80,11 +80,12 @@ a:hover {
 
 .branding h1 {
   font-family: var(--heading-font);
-  font-size: 2.35rem;
-  color: #2F7D32;
+  font-size: 2.8rem;   /* bigger */
+  color: var(--green-light);  /* switched color */
   margin-bottom: 0.25rem;
   letter-spacing: 1px;
   line-height: 1.05;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.05);
 }
 
 .branding .subtitle {
@@ -135,8 +136,7 @@ a:hover {
 
 .main-nav a:hover {
   background: var(--green-light);
-  color: #134611;
-  transform: translateY(-2px);
+  color: var(--green-light);
 }
 
 .main-nav a.active {
@@ -153,10 +153,10 @@ a:hover {
 
 .page-title {
   font-family: var(--heading-font);
-  color: #2F7D32;
+  font-size: 2.4rem;   /* bigger */
+  color: var(--green-light);
   margin-bottom: 1rem;
-  font-size: 2rem;
-  line-height: 1.1;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.05);
 }
 
 .card,
@@ -183,10 +183,10 @@ a:hover {
 
 .section-title {
   font-family: var(--heading-font);
-  color: #134611;
+  font-size: 1.7rem;   /* bigger */
+  color: var(--green-light);
   margin-bottom: 0.75rem;
-  font-size: 1.45rem;
-  line-height: 1.15;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.05);
 }
 
 .subtle {
