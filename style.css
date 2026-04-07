@@ -49,19 +49,18 @@ a:hover {
 }
 
 .top-bar {
-  height: 8px;
+  height: 6px;
   background: linear-gradient(
     90deg,
-    var(--green-light),
-    var(--lavender),
-    var(--peach),
-    var(--sky),
-    var(--green-light)
+    #93E189,
+    #B2ABF2,
+    #FFE5D9,
+    #E6F4FF
   );
 }
 
 .site-header {
-  background: linear-gradient(135deg, var(--lavender-light), var(--mint));
+  background: #F6FBFF; /* very light blue */
   color: var(--text);
   padding: 1rem 1.25rem;
   display: flex;
@@ -69,7 +68,7 @@ a:hover {
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
-  border-bottom: 2px solid var(--border);
+  border-bottom: 3px solid var(--green-light);
 }
 
 .branding h1 {
@@ -80,23 +79,13 @@ a:hover {
 }
 
 .branding .subtitle {
-  font-size: 0.8rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
   color: var(--muted);
-  font-weight: 700;
 }
 
 .branding .tagline {
-  margin-top: 0.5rem;
-  display: inline-block;
-  background: var(--white);
-  color: var(--green-dark);
-  padding: 0.4rem 0.8rem;
-  border-radius: 999px;
-  font-size: 0.85rem;
-  font-weight: bold;
-  border: 2px solid var(--green-light);
+  background: var(--green-light);
+  color: var(--text);
+  border: none;
 }
 
 .logo-wrap img {
@@ -106,7 +95,7 @@ a:hover {
 }
 
 .main-nav {
-  background: var(--white);
+  background: #FFFFFF; /* pure white */
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -115,22 +104,24 @@ a:hover {
 }
 
 .main-nav a {
-  color: var(--green-dark);
+  color: var(--text);
   text-decoration: none;
-  padding: 0.65rem 1rem;
+  padding: 0.6rem 1rem;
   border-radius: 999px;
   font-weight: bold;
-  background: var(--mint);
+  background: var(--lavender-light);
   border: 2px solid transparent;
   transition: all 0.2s ease;
 }
 
-.main-nav a:hover,
+.main-nav a:hover {
+  background: var(--green-light);
+  transform: translateY(-2px);
+}
+
 .main-nav a.active {
-  background: var(--lavender);
+  background: var(--green-light);
   color: var(--text);
-  border-color: var(--white);
-  transform: translateY(-1px);
 }
 
 .container {
