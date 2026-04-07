@@ -81,20 +81,19 @@ a:hover {
 
 .branding h1 {
   font-family: var(--heading-font);
-  font-size: 2.8rem;   /* bigger */
-  color: var(--green-light);  /* switched color */
-  margin-bottom: 0.25rem;
-  letter-spacing: 1px;
-  line-height: 1.05;
-  text-shadow: 1px 1px 0px rgba(0,0,0,0.05);
+  font-size: 3.2rem;
+  color: var(--green-light);
+  margin-bottom: 0.35rem;
+  letter-spacing: 2px;
+  line-height: 1.08;
 }
 
 .branding .subtitle {
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--muted);
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .branding .tagline {
@@ -154,10 +153,11 @@ a:hover {
 
 .page-title {
   font-family: var(--heading-font);
-  font-size: 2.4rem;   /* bigger */
+  font-size: 2.7rem;
   color: var(--green-light);
-  margin-bottom: 1rem;
-  text-shadow: 1px 1px 0px rgba(0,0,0,0.05);
+  margin-bottom: 1.1rem;
+  letter-spacing: 1.5px;
+  line-height: 1.1;
 }
 
 .card,
@@ -183,11 +183,40 @@ a:hover {
 }
 
 .section-title {
-  font-family: var(--heading-font);
-  font-size: 1.7rem;   /* bigger */
+  font-family: "Nunito", Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
   color: var(--green-light);
-  margin-bottom: 0.75rem;
-  text-shadow: 1px 1px 0px rgba(0,0,0,0.05);
+  margin-bottom: 0.65rem;
+  line-height: 1.25;
+  letter-spacing: 0.3px;
+}
+
+p, li, td {
+  font-size: 1.05rem;
+}
+
+th {
+  font-size: 0.95rem;
+}
+
+.small {
+  font-size: 0.9rem;
+}
+
+.card,
+.hero-card,
+.table-card,
+.notice {
+  padding: 1.2rem;
+}
+
+.section-title {
+  margin-bottom: 0.5rem;
+}
+
+ul.pretty-list li {
+  margin-bottom: 0.35rem;
 }
 
 .subtle {
@@ -318,15 +347,17 @@ th {
   }
 
   .branding h1 {
-    font-size: 1.9rem;
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
   }
 
   .page-title {
-    font-size: 1.7rem;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
   }
 
   .section-title {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 
   .logo-wrap img {
