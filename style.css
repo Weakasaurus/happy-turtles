@@ -39,10 +39,11 @@ html {
 }
 
 body {
-  font-family: var(--body-font);
+  font-family: "Nunito", Arial, sans-serif;
+  font-size: 18px; /* bigger base text */
   background: var(--offwhite);
   color: var(--text);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 a {
