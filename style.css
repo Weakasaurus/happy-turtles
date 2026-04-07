@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'TurtleBubble';
+  src: url('fonts/KinderChildKawaiiBubble-WpnAz.otf') format('opentype');
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,6 +15,7 @@
   --green-dark: #3FA34D;
 
   --lavender: #B2ABF2;
+  --lavender-dark: #8F85E8;
   --lavender-light: #F3F0FF;
 
   --mint: #EAFBE7;
@@ -19,12 +25,12 @@
   --pink: #FFE8F3;
 
   --white: #ffffff;
-  --offwhite: #F8FBFF;
+  --offwhite: #F7FAFF;
   --text: #2B2D42;
   --muted: #6B7280;
-  --border: #E3E8F2;
+  --border: #DDE3F0;
 
-  --heading-font: "Trebuchet MS", "Comic Sans MS", sans-serif;
+  --heading-font: 'TurtleBubble', cursive;
   --body-font: Arial, Helvetica, sans-serif;
 }
 
@@ -45,96 +51,112 @@ a {
 }
 
 a:hover {
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 .top-bar {
-  height: 6px;
+  height: 8px;
   background: linear-gradient(
     90deg,
-    #93E189,
-    #B2ABF2,
-    #FFE5D9,
-    #E6F4FF
+    var(--green-light),
+    var(--lavender),
+    var(--peach),
+    var(--sky),
+    var(--green-light)
   );
 }
 
 .site-header {
-  background: #F6FBFF; /* very light blue */
+  background: linear-gradient(135deg, #EAFBE7, #E6F4FF);
   color: var(--text);
-  padding: 1rem 1.25rem;
+  padding: 1.15rem 1.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
-  border-bottom: 3px solid var(--green-light);
+  border-bottom: 4px solid var(--green-light);
 }
 
 .branding h1 {
   font-family: var(--heading-font);
-  font-size: 2rem;
-  color: var(--green-dark);
+  font-size: 2.35rem;
+  color: #2F7D32;
   margin-bottom: 0.25rem;
+  letter-spacing: 1px;
+  line-height: 1.05;
 }
 
 .branding .subtitle {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--muted);
+  font-weight: 700;
 }
 
 .branding .tagline {
+  margin-top: 0.65rem;
+  display: inline-block;
   background: var(--green-light);
   color: var(--text);
-  border: none;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
 }
 
 .logo-wrap img {
-  width: 90px;
+  width: 95px;
   height: auto;
   display: block;
 }
 
 .main-nav {
-  background: #FFFFFF; /* pure white */
+  background: #F3F7FF;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  padding: 0.85rem 1rem;
-  border-bottom: 2px solid var(--border);
+  gap: 0.65rem;
+  padding: 0.9rem 1rem;
+  border-bottom: 2px solid var(--green-light);
 }
 
 .main-nav a {
   color: var(--text);
   text-decoration: none;
-  padding: 0.6rem 1rem;
+  padding: 0.65rem 1rem;
   border-radius: 999px;
   font-weight: bold;
-  background: var(--lavender-light);
-  border: 2px solid transparent;
+  background: var(--white);
+  border: 2px solid var(--lavender);
   transition: all 0.2s ease;
 }
 
 .main-nav a:hover {
   background: var(--green-light);
+  color: #134611;
   transform: translateY(-2px);
 }
 
 .main-nav a.active {
-  background: var(--green-light);
-  color: var(--text);
+  background: var(--lavender);
+  color: #1D1E2C;
+  border-color: var(--lavender-dark);
 }
 
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 1.25rem 1rem 3rem;
+  padding: 1.3rem 1rem 3rem;
 }
 
 .page-title {
   font-family: var(--heading-font);
-  color: var(--green-dark);
+  color: #2F7D32;
   margin-bottom: 1rem;
-  font-size: 1.7rem;
+  font-size: 2rem;
+  line-height: 1.1;
 }
 
 .card,
@@ -146,7 +168,7 @@ a:hover {
   border-radius: 20px;
   padding: 1rem;
   margin-bottom: 1rem;
-  box-shadow: 0 4px 12px rgba(43, 45, 66, 0.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
 }
 
 .hero-card {
@@ -161,9 +183,10 @@ a:hover {
 
 .section-title {
   font-family: var(--heading-font);
-  color: var(--green-dark);
+  color: #134611;
   margin-bottom: 0.75rem;
-  font-size: 1.2rem;
+  font-size: 1.45rem;
+  line-height: 1.15;
 }
 
 .subtle {
@@ -176,9 +199,9 @@ a:hover {
   background: var(--lavender);
   color: var(--text);
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   border-radius: 999px;
-  padding: 0.3rem 0.7rem;
+  padding: 0.32rem 0.72rem;
   margin-top: 0.5rem;
 }
 
@@ -206,7 +229,7 @@ a:hover {
 .info-box h3 {
   font-size: 1rem;
   margin-bottom: 0.45rem;
-  color: #7A5CCF;
+  color: #6F63D9;
 }
 
 ul.pretty-list {
@@ -232,7 +255,7 @@ table {
 th,
 td {
   border: 1px solid var(--border);
-  padding: 0.7rem;
+  padding: 0.72rem;
   text-align: left;
   vertical-align: top;
 }
@@ -247,12 +270,12 @@ th {
 }
 
 .mauve-card {
-  border-left: 8px solid var(--peach);
+  border-left: 8px solid #FFBFA3;
   background: linear-gradient(135deg, var(--peach), var(--white));
 }
 
 .navy-card {
-  border-left: 8px solid var(--sky);
+  border-left: 8px solid #9ED8FF;
   background: linear-gradient(135deg, var(--sky), var(--white));
 }
 
@@ -271,7 +294,7 @@ th {
   color: var(--text);
   text-align: center;
   padding: 1rem;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   border-top: 2px solid var(--border);
   font-weight: 700;
 }
@@ -290,10 +313,19 @@ th {
 @media (max-width: 700px) {
   .site-header {
     align-items: flex-start;
+    padding: 1rem;
   }
 
   .branding h1 {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
+  }
+
+  .page-title {
+    font-size: 1.7rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
   }
 
   .logo-wrap img {
