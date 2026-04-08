@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Happy Turtles Hub — Today</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body data-page="today">
@@ -29,102 +29,85 @@
   </nav>
 
   <main class="container">
-    <h2 class="page-title">Today — Tuesday, April 7</h2>
+    <h2 class="page-title" id="todayPageTitle">Today</h2>
 
-    <section class="hero-card">
+    <div id="todayNotice"></div>
+
+    <section class="hero-card" id="todayHero">
       <h3 class="section-title">What’s happening today</h3>
-      <p><strong>Reading assignment:</strong> Pages 1–4</p>
-      <div class="badge">Week 1 · Session 1</div>
+      <p><strong>Reading assignment:</strong> <span id="readingAssignment">Check schedule</span></p>
+      <div class="badge" id="todayBadge">Week 1</div>
     </section>
 
     <section class="grid-2">
       <div class="card green-card">
         <h3 class="section-title">Daily Practice</h3>
-        <ul class="pretty-list">
-          <li>Project journal practice</li>
-          <li>Literacy journal practice</li>
-          <li>Daily math practice</li>
-          <li>Check the reading schedule</li>
-        </ul>
+        <ul class="pretty-list" id="dailyPracticeList"></ul>
       </div>
 
       <div class="card lavender-card">
         <h3 class="section-title">Today’s Live Sessions</h3>
         <div class="info-box">
           <h3>Literacy Lab</h3>
-          <p>No breakout rooms today</p>
+          <p id="litLiveSession">No live session today</p>
         </div>
         <div class="info-box" style="margin-top:.75rem;">
           <h3>Theme Workshop</h3>
-          <p>No breakout rooms today</p>
+          <p id="themeLiveSession">No live session today</p>
         </div>
       </div>
     </section>
 
     <section class="grid-2">
-      <div class="card green-card">
+      <div class="card green-card" id="litOverviewCard">
         <h3 class="section-title">Literacy Lab</h3>
-        <p><strong>Session 1 · Light Up the World with Words</strong></p>
-        <ul class="pretty-list">
-          <li><strong>Connect:</strong> “Describe It, Don’t Name It!” with sensory clues</li>
-          <li><strong>Explore:</strong> What is poetry? Lines, stanzas, and blackout poetry</li>
-          <li><strong>Try It Out:</strong> Create a blackout poem in your journal</li>
-        </ul>
+        <div id="litOverviewContent"></div>
       </div>
 
-      <div class="card mauve-card">
+      <div class="card mauve-card" id="themeOverviewCard">
         <h3 class="section-title">Theme Workshop</h3>
-        <p><strong>Session 1 · Welcome to Hidden Histories</strong></p>
-        <ul class="pretty-list">
-          <li><strong>Explore:</strong> Then &amp; Now guesses about everyday objects</li>
-          <li><strong>Explain:</strong> Ada Lovelace and the hidden history of computers</li>
-          <li><strong>Try It Out:</strong> Become a historian and reflect on hidden histories inside everyday objects</li>
-        </ul>
+        <div id="themeOverviewContent"></div>
       </div>
     </section>
 
-   <section class="grid-2">
-  
-  <!-- Important Dates -->
-  <div class="table-card">
-    <h3 class="section-title">Important Dates</h3>
-    <div class="table-wrap">
-      <table>
-        <tr>
-          <th>Date</th>
-          <th>Event</th>
-        </tr>
-        <tr><td>Fri Apr 10</td><td>Guest Speaker Series</td></tr>
-        <tr><td>Tue Apr 14</td><td>Deadline to sign up for Science Fair</td></tr>
-        <tr><td>Fri Apr 17</td><td>Exploratories</td></tr>
-        <tr><td>Fri Apr 24</td><td>Support Speaker Series</td></tr>
-        <tr><td>Fri May 1</td><td>Science Fair</td></tr>
-        <tr><td>Thu May 7</td><td>LS Poetry Slam</td></tr>
-        <tr><td>Fri May 8</td><td>LS Talent Show</td></tr>
-        <tr><td>Thu May 14</td><td>Cycle 5 Expo Day</td></tr>
-      </table>
-    </div>
-  </div>
+    <section class="grid-2">
+      <div class="table-card">
+        <h3 class="section-title">Important Dates</h3>
+        <div class="table-wrap">
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Event</th>
+            </tr>
+            <tr><td>Fri Apr 10</td><td>Guest Speaker Series</td></tr>
+            <tr><td>Tue Apr 14</td><td>Deadline to sign up for Science Fair</td></tr>
+            <tr><td>Fri Apr 17</td><td>Exploratories</td></tr>
+            <tr><td>Fri Apr 24</td><td>Support Speaker Series</td></tr>
+            <tr><td>Fri May 1</td><td>Science Fair</td></tr>
+            <tr><td>Thu May 7</td><td>LS Poetry Slam</td></tr>
+            <tr><td>Fri May 8</td><td>LS Talent Show</td></tr>
+            <tr><td>Thu May 14</td><td>Cycle 5 Expo Day</td></tr>
+          </table>
+        </div>
+      </div>
 
-  <!-- This Week -->
-<section class="table-card">
-  <h3 class="section-title" id="thisWeekHeading">This Week</h3>
-  <div class="table-wrap">
-    <table>
-      <thead>
-        <tr>
-          <th>Date</th>
-          <th>Reading</th>
-          <th>Literacy Lab</th>
-          <th>Theme Workshop</th>
-        </tr>
-      </thead>
-      <tbody id="thisWeekBody"></tbody>
-    </table>
-  </div>
-</section>
-
-</section>
+      <div class="table-card">
+        <h3 class="section-title" id="thisWeekHeading">This Week</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Reading</th>
+                <th>Literacy Lab</th>
+                <th>Theme Workshop</th>
+              </tr>
+            </thead>
+            <tbody id="thisWeekBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
 
     <section class="notice">
       <h3 class="section-title">Get the Book</h3>
