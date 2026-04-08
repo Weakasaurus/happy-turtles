@@ -603,4 +603,28 @@ th {
     font-size: 1.15rem;
   }
 }
+
+/* Auto-highlight current date */
+.reading-calendar td.is-today {
+  background: #f8efe7 !important;
+  box-shadow: inset 0 0 0 3px #b46636;
+}
+
+.reading-calendar td.is-today .reading-date {
+  color: #a85628;
+  font-weight: 800;
+}
+
+.schedule-row.is-today .schedule-day,
+.schedule-row.is-today .schedule-main {
+  background: #eef8ee;
+}
+
+.schedule-row.is-today .schedule-day {
+  box-shadow: inset 4px 0 0 #61C96B;
+}
+
+.schedule-row.is-today .schedule-title-line {
+  font-weight: 800;
+}
 }
