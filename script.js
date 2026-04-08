@@ -498,9 +498,9 @@ function getTodayIso() {
   return `${n.getFullYear()}-${String(n.getMonth() + 1).padStart(2, "0")}-${String(n.getDate()).padStart(2, "0")}`;
 }
 
-function clampDate(iso) {
-  if (iso < cycleStart) return cycleStart;
-  if (iso > cycleEnd) return cycleEnd;
+function clampDate(iso, start = cycleStart, end = cycleEnd) {
+  if (iso < start) return start;
+  if (iso > end) return end;
   return iso;
 }
 
@@ -681,32 +681,9 @@ function renderThisWeek() {
   body.innerHTML = rows;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  setActiveNav();
-
-  if (typeof renderDailyPractice === "function") renderDailyPractice();
-  if (typeof renderTodayPage === "function") renderTodayPage();
-  if (typeof renderThisWeek === "function") renderThisWeek();
-
-  highlightCurrentDate();
-});
-
-function getTodayIso() {
-  const n = new Date();
-  return `${n.getFullYear()}-${String(n.getMonth() + 1).padStart(2, "0")}-${String(n.getDate()).padStart(2, "0")}`;
-}
-
-function clampDate(iso, start, end) {
-  if (iso < start) return start;
-  if (iso > end) return end;
-  return iso;
-}
-
 function highlightCurrentDate() {
   const today = getTodayIso();
-  const litStart = "2026-04-07";
-  const litEnd = "2026-05-14";
-  const displayDate = clampDate(today, litStart, litEnd);
+  const displayDate = clampDate(today);
 
   document.querySelectorAll("[data-date]").forEach((el) => {
     if (el.dataset.date === displayDate) {
@@ -716,3 +693,13 @@ function highlightCurrentDate() {
     }
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  setActiveNav();
+
+  if (typeof renderDailyPractice === "function") renderDailyPractice();
+  if (typeof renderTodayPage === "function") renderTodayPage();
+  if (typeof renderThisWeek === "function") renderThisWeek();
+
+  highlightCurrentDate();
+});
