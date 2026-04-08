@@ -28,7 +28,7 @@ const literacySchedule = [
     connect: "Match modern art to clues from the Harlem Renaissance",
     explore: "How poets and artists from the Harlem Renaissance changed what the world could see",
     tryIt: "Brainstorm a poetry collection topic you want to shine a light on",
-    breakout: "Theme breakout research groups"
+    breakout: "No breakout rooms today"
   },
   {
     date: "2026-04-09",
@@ -38,7 +38,7 @@ const literacySchedule = [
     connect: "Notice how images and words can point to a bigger message",
     explore: "How theme works in poetry and why it matters",
     tryIt: "Brainstorm four themes you could explore in your poetry collection",
-    breakout: "Theme debate prep groups"
+    breakout: "No breakout rooms today"
   },
   {
     date: "2026-04-13",
@@ -68,7 +68,7 @@ const literacySchedule = [
     connect: "Notice what makes a line sound memorable",
     explore: "What strong lyric poems do with repetition and flow",
     tryIt: "Draft your lyric poem",
-    breakout: "Breakout rooms"
+    breakout: "No breakout rooms today"
   },
   {
     date: "2026-04-16",
@@ -108,7 +108,7 @@ const literacySchedule = [
     connect: "Study how a picture can spark poetic language",
     explore: "How free verse can sound natural while still carrying strong images",
     tryIt: "Draft your free verse poem",
-    breakout: "Breakout rooms"
+    breakout: "No breakout rooms today"
   },
   {
     date: "2026-04-23",
@@ -148,7 +148,7 @@ const literacySchedule = [
     connect: "Study how poets build tension and movement",
     explore: "How narrative poems balance story and craft",
     tryIt: "Draft your narrative poem",
-    breakout: "Breakout rooms"
+    breakout: "No breakout rooms today"
   },
   {
     date: "2026-04-30",
@@ -188,7 +188,7 @@ const literacySchedule = [
     connect: "Notice where older and newer voices meet",
     explore: "How structure and line choice shape a golden shovel poem",
     tryIt: "Draft your golden shovel poem",
-    breakout: "Breakout rooms"
+    breakout: "No breakout rooms today"
   },
   {
     date: "2026-05-07",
