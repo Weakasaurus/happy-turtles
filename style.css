@@ -328,8 +328,8 @@ th {
 }
 
 .lit-card-header {
-  background: var(--lavender);
-  color: #1D1E2C;
+  background: linear-gradient(135deg, var(--lavender), var(--lavender-light));
+  color: var(--text);
   padding: 0.9rem 1.1rem;
   font-family: "Nunito", Arial, sans-serif;
   font-size: 1.2rem;
@@ -358,7 +358,7 @@ th {
   font-size: 0.92rem;
   font-weight: 800;
   padding: 0.8rem 0.5rem;
-  border: 1px solid #c88a5f;
+  border: 1px solid var(--border);
 }
 
 .reading-calendar td {
@@ -485,34 +485,39 @@ th {
 
 .tag {
   display: inline-block;
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   font-weight: 800;
-  padding: 0.15rem 0.45rem;
+  padding: 0.18rem 0.5rem;
   border-radius: 999px;
   margin-left: 0.35rem;
   vertical-align: middle;
 }
 
+/* 💙 Breakouts */
 .tag-breakout {
-  background: #f6ead8;
-  color: #9b621f;
+  background: #E6F2FF;
+  color: #2F6DB3;
 }
 
+/* 💜 Jam */
 .tag-jam {
-  background: #efe5ff;
-  color: #6f49b6;
+  background: #F0EBFF;
+  color: #6F63D9;
 }
 
+/* 🟡 Feedback */
 .tag-feedback {
-  background: #f8efd9;
-  color: #9f7300;
+  background: #FFF4CC;
+  color: #B38A00;
 }
 
-.tag-celebrate {
-  background: #ffe7d6;
-  color: #a3552b;
+/* 💖 Celebrate / Expo / Prep */
+.tag-celebrate,
+.tag-expo,
+.tag-prep {
+  background: #FFE6F0;
+  color: #B34D7A;
 }
-
 .reading-calendar td.is-today {
   background: #f8efe7 !important;
   box-shadow: inset 0 0 0 3px var(--green-medium);
