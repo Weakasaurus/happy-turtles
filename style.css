@@ -136,7 +136,7 @@ a:hover {
 
 .main-nav a:hover {
   background: var(--green-light);
-  color: var(--green-light);
+  color: var(--text);
 }
 
 .main-nav a.active {
@@ -381,7 +381,7 @@ th {
   td {
     padding: 0.6rem;
     font-size: 0.92rem;
-  }
+  }}
 
   /* ===== Literacy page custom sections ===== */
 
@@ -604,6 +604,48 @@ th {
   }
 }
 
+/* Reading calendar text layout */
+.reading-calendar td {
+  background: #fff;
+  text-align: center;
+  vertical-align: top;
+  padding: 0.55rem 0.45rem;
+  border: 1px solid #e6d8ca;
+  min-width: 120px;
+}
+
+.reading-date {
+  display: block;
+  font-size: 0.78rem;
+  line-height: 1.1;
+  color: #7a7065;
+  margin-bottom: 0.18rem;
+  text-align: center;
+}
+
+.reading-pages {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #8a4d1f;
+  text-align: center;
+}
+
+.reading-note {
+  display: block;
+  font-size: 0.92rem;
+  color: #6d8e87;
+  font-style: italic;
+  text-align: center;
+}
+
+.reading-done {
+  display: block;
+  font-size: 0.9rem;
+  color: #a8adb8;
+  text-align: center;
+}
+
 /* Auto-highlight current date */
 .reading-calendar td.is-today {
   background: #f8efe7 !important;
@@ -626,5 +668,4 @@ th {
 
 .schedule-row.is-today .schedule-title-line {
   font-weight: 800;
-}
 }
