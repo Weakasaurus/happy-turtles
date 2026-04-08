@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'TurtleBubble';
-  src: url('fonts/KinderChildKawaiiBubble-WpnAz.otf') format('opentype');
+  font-family: "TurtleBubble";
+  src: url("fonts/KinderChildKawaiiBubble-WpnAz.otf") format("opentype");
 }
 
 * {
@@ -10,28 +10,27 @@
 }
 
 :root {
-  --green-light: #93E189;
-  --green-medium: #61C96B;
-  --green-dark: #3FA34D;
+  --green-light: #93e189;
+  --green-medium: #61c96b;
+  --green-dark: #3fa34d;
 
-  --lavender: #B2ABF2;
-  --lavender-dark: #8F85E8;
-  --lavender-light: #F3F0FF;
+  --lavender: #b2abf2;
+  --lavender-dark: #8f85e8;
+  --lavender-light: #f3f0ff;
 
-  --mint: #EAFBE7;
-  --peach: #FFE5D9;
-  --sky: #E8F4FF;
-  --butter: #FFF7CC;
-  --pink: #FFE8F3;
+  --mint: #eafbe7;
+  --peach: #ffe5d9;
+  --sky: #e8f4ff;
+  --butter: #fff7cc;
 
   --white: #ffffff;
-  --offwhite: #F7FAFF;
-  --text: #2B2D42;
-  --muted: #6B7280;
-  --border: #DDE3F0;
+  --offwhite: #f7faff;
+  --text: #2b2d42;
+  --muted: #6b7280;
+  --border: #dde3f0;
 
-  --heading-font: 'TurtleBubble', cursive;
-  --body-font: Arial, Helvetica, sans-serif;
+  --heading-font: "TurtleBubble", cursive;
+  --body-font: "Nunito", Arial, sans-serif;
 }
 
 html {
@@ -39,8 +38,8 @@ html {
 }
 
 body {
-  font-family: "Nunito", Arial, sans-serif;
-  font-size: 18px; /* bigger base text */
+  font-family: var(--body-font);
+  font-size: 18px;
   background: var(--offwhite);
   color: var(--text);
   line-height: 1.6;
@@ -68,7 +67,7 @@ a:hover {
 }
 
 .site-header {
-  background: linear-gradient(135deg, #EAFBE7, #E6F4FF);
+  background: linear-gradient(135deg, #eafbe7, #e6f4ff);
   color: var(--text);
   padding: 1.15rem 1.25rem;
   display: flex;
@@ -115,7 +114,7 @@ a:hover {
 }
 
 .main-nav {
-  background: #F3F7FF;
+  background: #f3f7ff;
   display: flex;
   flex-wrap: wrap;
   gap: 0.65rem;
@@ -141,7 +140,7 @@ a:hover {
 
 .main-nav a.active {
   background: var(--lavender);
-  color: #1D1E2C;
+  color: #1d1e2c;
   border-color: var(--lavender-dark);
 }
 
@@ -167,7 +166,7 @@ a:hover {
   background: var(--white);
   border: 2px solid var(--border);
   border-radius: 20px;
-  padding: 1rem;
+  padding: 1.2rem;
   margin-bottom: 1rem;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
 }
@@ -187,36 +186,9 @@ a:hover {
   font-size: 1.5rem;
   font-weight: 800;
   color: var(--green-light);
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.5rem;
   line-height: 1.25;
   letter-spacing: 0.3px;
-}
-
-p, li, td {
-  font-size: 1.05rem;
-}
-
-th {
-  font-size: 0.95rem;
-}
-
-.small {
-  font-size: 0.9rem;
-}
-
-.card,
-.hero-card,
-.table-card,
-.notice {
-  padding: 1.2rem;
-}
-
-.section-title {
-  margin-bottom: 0.5rem;
-}
-
-ul.pretty-list li {
-  margin-bottom: 0.35rem;
 }
 
 .subtle {
@@ -250,7 +222,7 @@ ul.pretty-list li {
 }
 
 .info-box {
-  background: #FCFCFF;
+  background: #fcfcff;
   border: 2px solid var(--border);
   border-radius: 16px;
   padding: 0.9rem;
@@ -259,7 +231,7 @@ ul.pretty-list li {
 .info-box h3 {
   font-size: 1rem;
   margin-bottom: 0.45rem;
-  color: #6F63D9;
+  color: #6f63d9;
 }
 
 ul.pretty-list {
@@ -267,7 +239,21 @@ ul.pretty-list {
 }
 
 ul.pretty-list li {
-  margin-bottom: 0.45rem;
+  margin-bottom: 0.35rem;
+}
+
+p,
+li,
+td {
+  font-size: 1.05rem;
+}
+
+th {
+  font-size: 0.95rem;
+}
+
+.small {
+  font-size: 0.9rem;
 }
 
 .table-wrap {
@@ -300,12 +286,12 @@ th {
 }
 
 .mauve-card {
-  border-left: 8px solid #FFBFA3;
+  border-left: 8px solid #ffbfa3;
   background: linear-gradient(135deg, var(--peach), var(--white));
 }
 
 .navy-card {
-  border-left: 8px solid #9ED8FF;
+  border-left: 8px solid #9ed8ff;
   background: linear-gradient(135deg, var(--sky), var(--white));
 }
 
@@ -329,8 +315,225 @@ th {
   font-weight: 700;
 }
 
-.small {
-  font-size: 0.85rem;
+/* ===== Literacy + Theme custom sections ===== */
+
+.lit-card {
+  background: #ffffff;
+  border: 2px solid #dfe4ef;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.25rem;
+    border: 2px solid var(--lavender);
+}
+
+.lit-card-header {
+  background: var(--lavender);
+  color: #1D1E2C;
+  padding: 0.9rem 1.1rem;
+  font-family: "Nunito", Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.lit-card-body {
+  padding: 0;
+  background: #fff;
+}
+
+.reading-calendar-wrap {
+  overflow-x: auto;
+}
+
+.reading-calendar {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+.reading-calendar th {
+  background: var(--lavender-light);
+  color: var(--text);
+  text-align: center;
+  font-size: 0.92rem;
+  font-weight: 800;
+  padding: 0.8rem 0.5rem;
+  border: 1px solid #c88a5f;
+}
+
+.reading-calendar td {
+  background: #fff;
+  text-align: center;
+  vertical-align: top;
+  padding: 0.55rem 0.45rem;
+  border: 1px solid #e6d8ca;
+  min-width: 120px;
+}
+
+.reading-date {
+  display: block;
+  font-size: 0.78rem;
+  line-height: 1.1;
+  color: #7a7065;
+  margin-bottom: 0.18rem;
+  text-align: center;
+}
+
+.reading-pages {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--green-medium);
+  text-align: center;
+}
+
+.reading-note {
+  display: block;
+  font-size: 0.92rem;
+  color: #6d8e87;
+  font-style: italic;
+  text-align: center;
+}
+
+.reading-done {
+  display: block;
+  font-size: 0.9rem;
+  color: #a8adb8;
+  text-align: center;
+}
+
+.schedule-wrap {
+  border: 2px solid #dfe4ef;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.25rem;
+}
+
+.schedule-header {
+  background: #243b63;
+  color: white;
+  padding: 0.95rem 1.15rem;
+  font-family: "Nunito", Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.week-block {
+  border-top: 1px solid #d7dde9;
+}
+
+.week-block:first-of-type {
+  border-top: none;
+}
+
+.week-label {
+  background: #eef2f8;
+  color: #29456f;
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.55rem 0.9rem;
+  border-top: 1px solid #d7dde9;
+  border-bottom: 1px solid #d7dde9;
+}
+
+.schedule-row {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  border-bottom: 1px solid #e3e8f0;
+}
+
+.schedule-row:last-child {
+  border-bottom: none;
+}
+
+.schedule-day {
+  padding: 0.8rem 0.65rem;
+  background: #fff;
+  border-right: 1px solid #e3e8f0;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #5c6475;
+  text-transform: uppercase;
+  line-height: 1.25;
+}
+
+.schedule-main {
+  padding: 0.7rem 0.8rem;
+  background: #fff;
+}
+
+.schedule-title-line {
+  font-size: 1rem;
+  color: #1f2b42;
+  margin-bottom: 0.18rem;
+}
+
+.session-num {
+  font-weight: 900;
+  color: #113f2c;
+  margin-right: 0.35rem;
+}
+
+.schedule-sub {
+  font-size: 0.92rem;
+  color: #7a7065;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 800;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  margin-left: 0.35rem;
+  vertical-align: middle;
+}
+
+.tag-breakout {
+  background: #f6ead8;
+  color: #9b621f;
+}
+
+.tag-jam {
+  background: #efe5ff;
+  color: #6f49b6;
+}
+
+.tag-feedback {
+  background: #f8efd9;
+  color: #9f7300;
+}
+
+.tag-celebrate {
+  background: #ffe7d6;
+  color: #a3552b;
+}
+
+.reading-calendar td.is-today {
+  background: #f8efe7 !important;
+  box-shadow: inset 0 0 0 3px var(--green-medium);
+}
+
+.reading-calendar td.is-today .reading-date {
+color: var(--green-medium);
+  font-weight: 800;
+}
+
+.schedule-row.is-today .schedule-day,
+.schedule-row.is-today .schedule-main {
+  background: #eef8ee;
+}
+
+.schedule-row.is-today .schedule-day {
+  box-shadow: inset 4px 0 0 #61c96b;
+}
+
+.schedule-row.is-today .schedule-title-line {
+  font-weight: 800;
 }
 
 @media (max-width: 800px) {
@@ -381,214 +584,8 @@ th {
   td {
     padding: 0.6rem;
     font-size: 0.92rem;
-  }}
+  }
 
-  /* ===== Literacy page custom sections ===== */
-
-.lit-card {
-  background: #ffffff;
-  border: 2px solid #dfe4ef;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
-  margin-bottom: 1.25rem;
-}
-
-.lit-card-header {
-  background: #b46636;
-  color: white;
-  padding: 0.9rem 1.1rem;
-  font-family: "Nunito", Arial, sans-serif;
-  font-size: 1.35rem;
-  font-weight: 800;
-}
-
-.lit-card-body {
-  padding: 0;
-  background: #fff;
-}
-
-.reading-calendar-wrap {
-  overflow-x: auto;
-}
-
-.reading-calendar {
-  width: 100%;
-  border-collapse: collapse;
-  min-width: 700px;
-}
-
-.reading-calendar th {
-  background: #c67843;
-  color: #fff;
-  text-align: center;
-  font-size: 0.92rem;
-  font-weight: 800;
-  padding: 0.8rem 0.5rem;
-  border: 1px solid #c88a5f;
-}
-
-.reading-calendar td {
-  background: #fff;
-  text-align: center;
-  vertical-align: top;
-  padding: 0.65rem 0.5rem;
-  border: 1px solid #e6d8ca;
-  min-width: 120px;
-}
-
-.reading-date {
-  display: block;
-  font-size: 0.9rem;
-  color: #7a7065;
-  margin-bottom: 0.2rem;
-}
-
-.reading-pages {
-  display: block;
-  font-size: 1rem;
-  font-weight: 800;
-  color: #8a4d1f;
-}
-
-.reading-note {
-  display: block;
-  font-size: 0.92rem;
-  color: #6d8e87;
-  font-style: italic;
-}
-
-.reading-done {
-  display: block;
-  font-size: 0.92rem;
-  color: #a8adb8;
-}
-
-.reading-today {
-  background: #f8efe7 !important;
-}
-
-.reading-today .reading-date {
-  color: #a85628;
-  font-weight: 800;
-}
-
-.schedule-wrap {
-  border: 2px solid #dfe4ef;
-  border-radius: 20px;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
-}
-
-.schedule-header {
-  background: #243b63;
-  color: white;
-  padding: 0.95rem 1.15rem;
-  font-family: "Nunito", Arial, sans-serif;
-  font-size: 1.3rem;
-  font-weight: 800;
-}
-
-.week-block {
-  border-top: 1px solid #d7dde9;
-}
-
-.week-block:first-of-type {
-  border-top: none;
-}
-
-.week-label {
-  background: #eef2f8;
-  color: #29456f;
-  font-size: 0.92rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  padding: 0.55rem 0.9rem;
-  border-top: 1px solid #d7dde9;
-  border-bottom: 1px solid #d7dde9;
-}
-
-.schedule-row {
-  display: grid;
-  grid-template-columns: 90px 1fr;
-  border-bottom: 1px solid #e3e8f0;
-}
-
-.schedule-row:last-child {
-  border-bottom: none;
-}
-
-.schedule-day {
-  padding: 0.8rem 0.65rem;
-  background: #fff;
-  border-right: 1px solid #e3e8f0;
-  font-size: 0.95rem;
-  font-weight: 800;
-  color: #5c6475;
-  text-transform: uppercase;
-  line-height: 1.25;
-}
-
-.schedule-main {
-  padding: 0.7rem 0.8rem;
-  background: #fff;
-}
-
-.schedule-title-line {
-  font-size: 1.06rem;
-  color: #1f2b42;
-  margin-bottom: 0.18rem;
-}
-
-.session-num {
-  font-weight: 900;
-  color: #113f2c;
-  margin-right: 0.35rem;
-}
-
-.schedule-sub {
-  font-size: 0.95rem;
-  color: #7a7065;
-}
-
-.schedule-today .schedule-day,
-.schedule-today .schedule-main {
-  background: #eef8ee;
-}
-
-.tag {
-  display: inline-block;
-  font-size: 0.74rem;
-  font-weight: 800;
-  padding: 0.15rem 0.45rem;
-  border-radius: 999px;
-  margin-left: 0.35rem;
-  vertical-align: middle;
-}
-
-.tag-breakout {
-  background: #f6ead8;
-  color: #9b621f;
-}
-
-.tag-jam {
-  background: #efe5ff;
-  color: #6f49b6;
-}
-
-.tag-feedback {
-  background: #f8efd9;
-  color: #9f7300;
-}
-
-.tag-celebrate {
-  background: #ffe7d6;
-  color: #a3552b;
-}
-
-@media (max-width: 700px) {
   .schedule-row {
     grid-template-columns: 1fr;
   }
@@ -600,72 +597,6 @@ th {
 
   .lit-card-header,
   .schedule-header {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
   }
-}
-
-/* Reading calendar text layout */
-.reading-calendar td {
-  background: #fff;
-  text-align: center;
-  vertical-align: top;
-  padding: 0.55rem 0.45rem;
-  border: 1px solid #e6d8ca;
-  min-width: 120px;
-}
-
-.reading-date {
-  display: block;
-  font-size: 0.78rem;
-  line-height: 1.1;
-  color: #7a7065;
-  margin-bottom: 0.18rem;
-  text-align: center;
-}
-
-.reading-pages {
-  display: block;
-  font-size: 1rem;
-  font-weight: 800;
-  color: #8a4d1f;
-  text-align: center;
-}
-
-.reading-note {
-  display: block;
-  font-size: 0.92rem;
-  color: #6d8e87;
-  font-style: italic;
-  text-align: center;
-}
-
-.reading-done {
-  display: block;
-  font-size: 0.9rem;
-  color: #a8adb8;
-  text-align: center;
-}
-
-/* Auto-highlight current date */
-.reading-calendar td.is-today {
-  background: #f8efe7 !important;
-  box-shadow: inset 0 0 0 3px #b46636;
-}
-
-.reading-calendar td.is-today .reading-date {
-  color: #a85628;
-  font-weight: 800;
-}
-
-.schedule-row.is-today .schedule-day,
-.schedule-row.is-today .schedule-main {
-  background: #eef8ee;
-}
-
-.schedule-row.is-today .schedule-day {
-  box-shadow: inset 4px 0 0 #61C96B;
-}
-
-.schedule-row.is-today .schedule-title-line {
-  font-weight: 800;
 }
