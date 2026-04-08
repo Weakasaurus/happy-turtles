@@ -297,7 +297,7 @@ th {
 
 /* 💚 Daily Practice */
 .green-card {
-  border-left: 8px solid #93E189;
+  border-left: 8px solid #dd8fb1;
   background: linear-gradient(135deg, #EAFBE7, #ffffff);
 }
 
@@ -724,4 +724,13 @@ color: var(--green-medium);
   .parent-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.08);
 }
